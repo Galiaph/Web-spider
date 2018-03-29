@@ -3,13 +3,11 @@ from lxml import html
 import time
 
 def get_site_data(url):
-    """try:
+    try:
         return requests.get(url).text
     except requests.HTTPError as identifier:
         print("error in http request: {}".format(identifier.args))
-        return None"""
-    with open("temp.txt", 'r') as f:
-        return f.read()
+        return None
 
 
 def get_parse_list(url, domen):
